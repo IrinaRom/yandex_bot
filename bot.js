@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Yandex bot
 // @author       Romanova Irina
-// @match        https://yandex.ru/
+// @match        https://yandex.ru/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
