@@ -9,7 +9,7 @@
 // @grant        none
 // ==/UserScript==
 
-let keywords = ["круизы по Нилу"];
+let keywords = ["круизы по Нилу", "речные круизы", "круизы по Волге", "теплоходы"];
 let keyword = keywords[getRandom(0,keywords.length)];
 let infoInput = document.querySelectorAll(".input__control")[0];
 let searchBtn = document.querySelectorAll(".button_theme_search")[0];
@@ -48,9 +48,9 @@ if (searchBtn !== undefined) {
             break;
         }
     }
-    if (document.querySelector('.pager__item_current_yes').innerText == "5") {
-        let nextYandexPage = false;
-        location.href = "https://www.yandex.ru";
+   if (document.querySelector('[aria-label="Текущая страница 5"]')){
+        nextYandexPage = false;
+        location.href = 'https://www.yandex.ru';
     }
     if (nextYandexPage) {
         setTimeout(()=>{nextPage.click();},getRandom(2000,6000));
