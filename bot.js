@@ -5,6 +5,7 @@
 // @description  Yandex bot
 // @author       Romanova Irina
 // @match        https://yandex.ru/*
+// @match        https://www.infoflot.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
@@ -27,7 +28,7 @@ if (searchBtn !== undefined) {
             searchBtn.click();
         }
     },500);
-}else if(location.hostname == 'infoflot.com'){
+}else if(location.hostname == 'www.infoflot.com'){
 
     setInterval(()=>{
         let index = getRandom(0, links.length);
